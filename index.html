@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#080b12" />
+  <meta name="description" content="Dev Kumar builds GPU kernels and distributed deep learning systems for large-scale market models." />
+  <title>Dev Kumar — Compute with intent</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Dev Kumar, home">DK<span class="wordmark-dot">.</span></a>
+    <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#compute">Compute</a><a href="#projects">Projects</a><a href="#about">Approach</a></nav>
+    <a class="header-contact" href="mailto:devpatna2017@gmail.com">Let’s talk <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="hero-art" aria-hidden="true"><img src="assets/gpu-mesh.svg" alt="" /><div class="hero-glow"></div></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> CHICAGO · AI RESEARCH &amp; ML SYSTEMS</div>
+        <h1>Compute,<br /><em data-rotating-copy>with intent.</em></h1>
+        <p class="hero-deck">I make deep learning systems go further—by understanding every layer from the training signal to the GPU instruction.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#work">Explore my work <span>↓</span></a><a class="text-link" href="mailto:devpatna2017@gmail.com">devpatna2017@gmail.com <span>↗</span></a></div>
+      </div>
+      <div class="hero-meta"><span>RESEARCH × SYSTEMS × HARDWARE</span><span>01 — 05</span></div>
+      <div class="hero-stat"><span class="stat-value">52<span>%</span></span><span class="stat-label">model FLOPs<br />utilization</span></div>
+      <a class="scroll-cue" href="#compute" aria-label="Scroll to the next section"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section id="compute" class="signal-band section-wrap">
+      <div class="section-kicker"><span>01 / THE COMPUTE PATH</span><span class="rule"></span><span>DATA → MODEL → SIGNAL</span></div>
+      <div class="signal-layout">
+        <div class="signal-intro"><h2>Feed the model.<br />Free the GPU.</h2><p>Useful model work depends on a whole system: the right data, efficient kernels, fast communication, and recovery that keeps experiments moving. I look for the constraint, measure it, and make the next run count.</p></div>
+        <div class="flow-card" aria-label="Distributed training data and compute flow diagram">
+          <div class="flow-head"><span>DISTRIBUTED TRAINING / 256 × H100</span><span class="flow-live"><i></i> CLUSTER GOODPUT 99.5%</span></div>
+          <div class="compute-diagram">
+            <div class="compute-source"><b>40 TB+</b><span>MARKET + ALTERNATIVE DATA</span><i>stream · shard · prefetch</i></div>
+            <div class="compute-bridge"><span></span><span></span><span></span></div>
+            <div class="gpu-cluster"><div class="cluster-label">FSDP + TENSOR / PIPELINE PARALLEL</div><div class="gpu-grid"><i>GPU 00</i><i>GPU 01</i><i>GPU 02</i><i>GPU 03</i><i>GPU 04</i><i>GPU 05</i><i>GPU 06</i><i>GPU 07</i></div><div class="fabric-line"><span>NCCL · INFINIBAND</span><i></i></div></div>
+            <div class="compute-bridge bridge-two"><span></span><span></span><span></span></div>
+            <div class="compute-result"><b>MODEL</b><span>MARKET STATE</span><i>checkpoint · recover</i></div>
+          </div>
+          <div class="flow-foot"><span>TRITON · CUDA GRAPHS · ASYNC CHECKPOINTS</span><span>45<small>% FASTER</small></span></div>
+          <div class="waveform" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          <div class="latency-scale"><span>INPUT</span><span>SHARD</span><span>ALL-REDUCE</span><span>TRAIN</span><span>RECOVER</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="experience section-wrap">
+      <div class="section-kicker"><span>02 / EXPERIENCE</span><span class="rule"></span><span>PROFILE · CO-DESIGN · SCALE</span></div>
+      <div class="section-heading"><h2>From kernels<br /><em>to clusters.</em></h2><p>Eight years building machine learning systems across trading, industrial vision, and time-series modeling.</p></div>
+      <div class="experience-list">
+        <article class="experience-item"><div class="experience-date">MAR 2025 — NOW<span class="current-dot"></span></div><div class="experience-main"><div class="experience-title"><h3>Software Engineer</h3><span>AI RESEARCH &amp; ML SYSTEMS</span></div><p class="company">London Stock Exchange Group <span>·</span> Chicago, IL</p><ul>
+          <li>Raised MFU from 31% to 52% on a 256-GPU H100 cluster by writing fused Triton and CUDA kernels (attention, RMSNorm, rotary embeddings) and capturing training steps in CUDA Graphs for a transformer foundation model for markets.</li>
+          <li>Cut training time 45% for billion-parameter models by co-designing FSDP, tensor, and pipeline parallelism and tuning NCCL on InfiniBand.</li>
+          <li>Reduced input-bound GPU time from 22% to under 2% by building a sharded, streaming training data loader over 40TB+ of market and alternative data (news and filings text) with asynchronous prefetch, pinned-memory transfers, and deterministic, resumable sampling.</li>
+          <li>Lifted effective cluster goodput to 99.5% with sub-3-minute recovery from node failures by building fault-tolerance for large-scale model training: asynchronous distributed checkpointing, elastic restarts, NCCL hang detection, and automatic bad-node eviction.</li>
+          <li>Enabled 2x longer context windows within the same GPU memory by writing custom autograd functions in lower-level PyTorch, BF16/FP8 mixed precision, and selective activation checkpointing, cutting peak memory per GPU by 35%.</li>
+        </ul></div></article>
+        <article class="experience-item"><div class="experience-date">AUG 2023 — MAR 2025</div><div class="experience-main"><div class="experience-title"><h3>Software Engineer</h3><span>DEEP LEARNING SYSTEMS &amp; GPU KERNELS</span></div><p class="company">Citadel <span>·</span> Chicago, IL</p><ul>
+          <li>Accelerated JAX training 1.8x by writing Pallas kernels and custom XLA ops for sequence models and tuning XLA sharding annotations.</li>
+          <li>Scaled deep learning model training from 8 to 128 GPUs at 90% scaling efficiency by implementing data-parallel and FSDP training, gradient bucketing, and topology-aware NCCL all-reduce over RDMA and GPUDirect.</li>
+          <li>Cut training data loading time by 70% by building a C++/Python data pipeline over 10+ years of tick data (CME MDP 3.0, ITCH) using memory-mapped columnar shards, multi-process decoding, and GPU-side feature normalization.</li>
+          <li>Lowered real-time model inference latency by 60% (to 140µs) by building CuTe DSL and CUTLASS GEMM kernels, CUDA Graphs replay, and FPGA/ASIC offload of feature preprocessing over PCIe and DMA via hardware/software co-design.</li>
+          <li>Tripled researcher experiment throughput (days to hours per run) by building a PyTorch training framework with reproducible configs, distributed hyperparameter sweeps, Nsight Systems profiling, and automatic checkpoint/resume on preemptible GPU nodes.</li>
+        </ul></div></article>
+        <article class="experience-item"><div class="experience-date">APR 2018 — AUG 2023</div><div class="experience-main"><div class="experience-title"><h3>Software Engineer</h3><span>MACHINE LEARNING &amp; HPC SYSTEMS</span></div><p class="company">Tata Group</p><ul>
+          <li>Raised surface defect detection accuracy to 96% and cut false rejects by 40% by building and training CNN and vision transformer models in PyTorch on 2M+ production images with multi-GPU distributed data parallel training.</li>
+          <li>Reduced time-series forecasting error (MAPE) by 28% for commodity price and production planning by developing LSTM and temporal transformer models, translating sequence modeling methods from NLP to industrial time series.</li>
+          <li>Accelerated training 3x by writing custom CUDA kernels and PyTorch C++/CUDA extensions with mixed precision on multi-GPU servers.</li>
+          <li>Processed 500K+ sensor events/sec into model-ready features by building low-latency C++ ingestion and Linux drivers that interface with FPGA- and ASIC-based controllers over PCIe and memory-mapped I/O for real-time inference.</li>
+          <li>Sustained 99.99% uptime for distributed training and inference systems by tuning TCP/IP and RDMA networking and SLURM/Kubernetes GPU scheduling, while mentoring 10-15 engineers and cutting defect rates by 40%.</li>
+        </ul></div></article>
+      </div>
+    </section>
+
+    <section class="systems section-wrap">
+      <div class="section-kicker"><span>03 / RESEARCH SYSTEMS TOOLKIT</span><span class="rule"></span><span>MEASURE AT EVERY LAYER</span></div>
+      <div class="systems-heading"><h2>Every bottleneck<br /><em>is a question.</em></h2><p>Find what limits the work, then move the limit.</p></div>
+      <div class="systems-map">
+        <div class="system-column"><span class="system-index">01</span><div class="system-symbol">▦</div><h3>GPU kernels</h3><p>Connect model math to hardware behavior with fused ops, memory discipline, and careful profiling.</p><div class="tag-list"><span>CUDA</span><span>TRITON</span><span>PALLAS</span><span>CuTe DSL</span><span>FP8</span></div></div>
+        <div class="map-connector" aria-hidden="true"><i></i></div>
+        <div class="system-column"><span class="system-index">02</span><div class="system-symbol">⤳</div><h3>Distributed training</h3><p>Keep compute busy with balanced parallelism, fast collectives, and restartable runs.</p><div class="tag-list"><span>PYTORCH / JAX</span><span>FSDP</span><span>NCCL</span><span>RDMA</span><span>CHECKPOINTS</span></div></div>
+        <div class="map-connector" aria-hidden="true"><i></i></div>
+        <div class="system-column"><span class="system-index">03</span><div class="system-symbol">⌘</div><h3>Data &amp; operations</h3><p>Make large datasets stream deterministically and keep cluster jobs progressing through failure.</p><div class="tag-list"><span>DATA LOADING</span><span>CUDA GRAPHS</span><span>SLURM</span><span>KUBERNETES</span><span>FAULT-TOLERANCE</span></div></div>
+      </div>
+      <div class="systems-outcome"><span>THE RESULT</span><p>Higher utilization. More experiments. Better feedback between research and implementation.</p><span class="outcome-pulse"><i></i><i></i><i></i></span></div>
+    </section>
+
+    <section id="projects" class="projects section-wrap">
+      <div class="section-kicker"><span>04 / SELECTED PROJECTS</span><span class="rule"></span><span>MODEL SYSTEMS · GPU COMPUTE</span></div>
+      <div class="section-heading"><h2>Build the path<br /><em>to better models.</em></h2><p>Experiments across data, model compute, kernel design, and systems.</p></div>
+      <div class="featured-projects">
+        <article class="featured-card featured-cme"><div class="project-art cme-art"><span class="grid-glow"></span><span class="ticker ticker-a">MARKET FOUNDATION MODEL</span><div class="matrix-vis" aria-hidden="true"><div class="matrix-grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="matrix-flow"><span>DATA</span><i></i><span>ATTENTION</span><i></i><span>MODEL</span></div></div><span class="ticker ticker-b">350M PARAMS · TRITON FUSED ATTENTION</span></div><div class="project-info"><div class="project-number">01 / PRE-TRAINING PIPELINE</div><h3>Real-time Stock Market<br />Analysis Pipeline</h3><p>A market foundation model training pipeline; achieved 1.6× training throughput over PyTorch eager on tick and news data.</p><div class="project-tags"><span>PYTORCH</span><span>JAX</span><span>TRITON</span><span>FSDP</span></div><div class="project-links"><a href="https://github.com/devthedevil/Realtime-Stock-Market-Analysis" target="_blank" rel="noreferrer">SourceCode <b>↗</b></a></div></div></article>
+        <article class="featured-card featured-driver"><div class="project-art driver-art"><div class="kernel-cube" aria-hidden="true"><div class="cube-face cube-front">FUSED OP</div><div class="cube-face cube-top">TILE</div><div class="cube-face cube-side">MEM</div><span class="kernel-pulse"></span></div><span class="driver-label">OP DAG → GPU KERNEL</span></div><div class="project-info"><div class="project-number">02 / GPU KERNELS</div><h3>MetalCompositor<br />Kernel Fusion Engine</h3><p>Compiles operator DAGs into fused GPU kernels; cut kernel launch overhead 70% and memory traffic 45%.</p><div class="project-tags"><span>CUDA</span><span>TRITON</span><span>CuTe DSL</span><span>METAL</span></div><div class="project-links"><a href="https://github.com/devthedevil/metal-compositor" target="_blank" rel="noreferrer">SourceCode <b>↗</b></a></div></div></article>
+      </div>
+      <div class="project-grid" id="project-grid" aria-label="More projects"></div>
+      <div class="publication-card"><div class="publication-mark">IEEE<br /><span>2023</span></div><div class="publication-body"><span class="project-number">RESEARCH / PUBLICATION</span><h3>A Comparative Study of Movie Recommendation Systems</h3><p>Published research exploring recommendation approaches and their comparative performance.</p></div><div class="publication-links"><a href="https://ieeexplore.ieee.org/document/10094480" target="_blank" rel="noreferrer">Paper <b>↗</b></a><a href="https://github.com/devthedevil/Comparative-Study-of-Movie-Recommendation-System/blob/main/Netflix_Movie.ipynb" target="_blank" rel="noreferrer">SourceCode <b>↗</b></a><a href="https://drive.google.com/file/d/1rayr6Cht6quyLUJOXWOAcBi_rxQp2Ol0/view" target="_blank" rel="noreferrer">Certificate <b>↗</b></a></div></div>
+    </section>
+
+    <section id="about" class="about section-wrap">
+      <div class="section-kicker"><span>05 / HOW I WORK</span><span class="rule"></span><span>STAY CLOSE TO THE MEASURE</span></div>
+      <div class="about-layout"><div class="about-statement"><span class="quote-mark">“</span><h2>Think in models.<br />Look at the <em>machine.</em></h2><p>I like the space where an idea becomes a runnable system. I’ll follow a workload through its data, math, kernels, and communication until the performance story makes sense. Then I’ll make the experiment repeatable, so the next question is easier to answer.</p><div class="education"><span>EDUCATION</span><p><b>M.S.</b> Computer Science · Illinois Institute of Technology<br /><b>B.S.</b> Computer Science · National Institute of Technology Calicut</p></div></div><div class="about-side"><div class="principle"><span>01</span><div><h3>Start with the workload</h3><p>Understand the model and data before deciding which part of the stack to optimize.</p></div></div><div class="principle"><span>02</span><div><h3>Profile the whole run</h3><p>Use traces and counters to connect kernel behavior with cluster-level utilization.</p></div></div><div class="principle"><span>03</span><div><h3>Make experiments durable</h3><p>Build reproducibility, checkpoints, and failure recovery into the research loop.</p></div></div><div class="about-links"><a href="https://github.com/devthedevil" target="_blank" rel="noreferrer">GitHub <span>↗</span></a><a href="https://scholar.google.com/citations?user=VXIu5a4AAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar <span>↗</span></a><a href="https://leetcode.com/u/dev_kumar_dklv/" target="_blank" rel="noreferrer">LeetCode <span>↗</span></a></div></div></div>
+    </section>
+    <section class="contact section-wrap"><div class="contact-grid" aria-hidden="true"></div><div class="contact-copy"><span class="section-kicker-label">LET’S MAKE THE NEXT RUN COUNT</span><h2>More signal.<br /><em>Less waiting.</em></h2><a class="button button-primary" href="mailto:devpatna2017@gmail.com">Get in touch <span>↗</span></a></div><div class="contact-rings" aria-hidden="true"><i></i><i></i><i></i><i></i></div></section>
+  </main>
+</body>
+</html>
